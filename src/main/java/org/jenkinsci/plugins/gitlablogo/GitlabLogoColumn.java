@@ -1,7 +1,6 @@
 package org.jenkinsci.plugins.gitlablogo;
 
 import hudson.Extension;
-import hudson.model.Descriptor;
 import hudson.views.ListViewColumn;
 import hudson.views.ListViewColumnDescriptor;
 import net.sf.json.JSONObject;
@@ -13,7 +12,7 @@ public class GitlabLogoColumn extends ListViewColumn {
     {
         @Override
         public boolean shownByDefault() {
-            return false;
+            return true;
         }
 
         @Override

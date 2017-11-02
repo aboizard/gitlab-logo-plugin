@@ -13,14 +13,10 @@ public class GitlabLogoProperty extends JobProperty<Job<?, ?>> {
   private final String repositoryName;
 
   @DataBoundConstructor
-  public GitlabLogoProperty(String endpointUrl, String repositoryName) {
+  public GitlabLogoProperty(String repositoryName) {
     this.repositoryName = repositoryName;
   }
 
-  /**
-   * We'll use this from the <tt>config.jelly</tt>.
-     * @return 
-   */
   public String getRepositoryName() {
     return repositoryName;
   }

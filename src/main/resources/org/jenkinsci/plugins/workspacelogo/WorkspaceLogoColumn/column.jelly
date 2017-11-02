@@ -1,10 +1,10 @@
 <j:jelly xmlns:j="jelly:core">
   <td>
-    <j:set var="prop" value="${job.getProperty('org.jenkinsci.plugins.gitlablogo.GitlabLogoProperty')}"/>
+    <j:set var="prop" value="${it.getWorkspaceLogo(job)}"/>
     <j:if test="${prop!=null}">
       <j:if test="${prop.available}">
         <a href="${prop.repositoryUrl}" title="${prop.repositoryUrl}">
-            <img src="${resURL}/plugin/gitlab-logo/images/gitlab-logo.png" class="icon${iconSize}" />
+            <img src="${resURL}/plugin/gitlab-logo/images/workspace-logo.png" class="icon${iconSize}" />
         </a>
       </j:if>
     </j:if>
